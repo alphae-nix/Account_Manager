@@ -4,12 +4,13 @@
 from tkinter import *
 import os
 from tkinter import ttk
-from ttkthemes import themed_tk as tk
+from tkinter import messagebox
+
 
 compteur_montrer1=0 #Variable global
 compteur_montrer2=0
 
-# Permet de montrer ou non son mot de passe
+# Permet de montrer ou non son mot de passe dans la page Login
 def montrer1():
     global compteur_montrer1
     if compteur_montrer1%2==0:
@@ -19,6 +20,7 @@ def montrer1():
         password_entry.config(show="*")
         compteur_montrer1+=1
 
+# Permet de montrer ou non son mot de passe dans la page Register
 def montrer2():
     global compteur_montrer2
     if compteur_montrer2%2==0:
@@ -30,13 +32,13 @@ def montrer2():
 
 # Supprime lorsque la connexion est bonne
 def delete2():
-    screen3.destroy()
+    screen3.destroy() # ici on ferme les différentes fenêtre ouvertes
     screen2.destroy()
     #exec(open("./test-bank.py").read()
     screen.destroy()
     os.system("./test-bank.py")
 
-def delete3():
+def delete3(): #Permet de fermer screen4= page affichant
   screen4.destroy()
 
 def delete4():
@@ -45,7 +47,7 @@ def delete4():
 def login_sucess():
   global screen3
   screen3 = Toplevel(screen)
-  screen3.title("Success")
+  screen3.title("Succès")
   screen3.geometry("150x100")
   Label(screen3, text = "Login Sucess").pack()
   Button(screen3, text = "OK", command =delete2).pack()
@@ -55,25 +57,29 @@ def login_sucess():
 def password_not_recognised():
   global screen4
   screen4 = Toplevel(screen)
-  screen4.title("Success")
+  screen4.title("Succès")
   screen4.geometry("500x200+700+400")
-  Label(screen4, text = "Password Error").pack()
+  Label(screen4, text = "Erreur mot de passe").pack()
   Button(screen4, text = "OK", command =delete3).pack()
 
 def user_not_found():
   global screen5
   screen5 = Toplevel(screen)
-  screen5.title("Success")
+  screen5.title("Succès")
   screen5.geometry("500x200+700+400")
-  Label(screen5, text = "User Not Found").pack()
+  Label(screen5, text = "Utilisateur inconnue").pack()
   Button(screen5, text = "OK", command =delete4).pack()
 
 
 def register_user():
-  print("working")
+  print("Recherche")
 
   username_info = username.get()
   password_info = password.get()
+
+  if username_info == "" :
+    messagebox.showinfo("Attention","Veuillez saisir un nom d'utilisateur pour vous enregistrer!", icon="warning")
+    return
 
   file=open(username_info, "w")
   file.write(username_info+"\n")
@@ -83,7 +89,7 @@ def register_user():
   username_entry.delete(0, END)
   password_entry.delete(0, END)
 
-  Label(screen1, text = "Registration Sucess", fg = "green" ,font = ("calibri", 11)).pack()
+  Label(screen1, text = "Enregistrement Réussi", fg = "green" ,font = ("calibri", 11)).pack()
 
 def login_verify():
 
@@ -132,8 +138,7 @@ def register():
   password_entry =  Entry(frame_mdp, textvariable = password, show='*')
   password_entry.pack(side=LEFT)
 
-  photo = PhotoImage(file='eye1.png')
-  photo = photo.subsample(32)
+
   oeil1=ttk.Button(frame_mdp, image= photo, command = montrer1, width=5)
   oeil1.pack(side=RIGHT)
 
@@ -173,8 +178,7 @@ def login():
   frame_mdp_oeil=Frame(screen2)#### frame contenant le mot de passe et l'oeil pour qu'ils soient au même niveau
   frame_mdp_oeil.pack()
 
-  photo = PhotoImage(file='eye1.png')
-  photo = photo.subsample(32)
+
   oeil2=ttk.Button(frame_mdp_oeil, image= photo, command = montrer2, width=5)
 
   password_entry1 = Entry(frame_mdp_oeil, textvariable = password_verify, show='*')
@@ -187,11 +191,12 @@ def login():
 
 def main_screen():
   global screen
+  global photo
 
+  screen = Tk()
 
-  screen = tk.ThemedTk()
-  screen.get_themes()
-  screen.set_theme("elegance")
+  photo1 = PhotoImage(file='eye1.png')
+  photo = photo1.subsample(32)
 
   screen.geometry("500x300+700+400")
   screen.title("Identification")
