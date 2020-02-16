@@ -1,8 +1,9 @@
-# Account_Manager
+# Titre du projet
+_(juste en dessous des badges sympatiques à placer)_
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
-application de gestionnaire de finance personnelle 
+Une petite description du projet
 
 ## Pour commencer
 
@@ -36,7 +37,6 @@ Dites comment faire pour lancer votre projet
 Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
 
 _exemples :_
-
 * [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
 * [Atom](https://atom.io/) - Editeur de textes
 
@@ -45,7 +45,6 @@ _exemples :_
 Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment le faire.
 
 ## Versions
-
 Listez les versions ici 
 _exemple :_
 **Dernière version stable :** 5.0
@@ -54,14 +53,15 @@ Liste des versions : [Cliquer pour afficher](https://github.com/your/project-nam
 _(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
 
 ## Auteurs
-
-* **Laurent Delatte** _alias_ [@alphae-nix](https://github.com/alphae-nix)
-* **Inès Fellous** alias [@]()
+Listez le(s) auteur(s) du projet ici !
+* **Jhon doe** _alias_ [@outout14](https://github.com/outout14)
 
 Lisez la liste des [contributeurs](https://github.com/your/project/contributors) pour voir qui à aidé au projet !
 
 _(pour le lien mettez simplement l'URL de votre projet suivi de ``/contirubors``)_
 
-## Rapport (pour plus d’informations)
+## License
 
-[rapport](./rapport.pdf)
+Ce projet est sous licence ``exemple: WTFTPL`` - voir le fichier [LICENSE.md](LICENSE.md) pour plus d'informations
+
+
