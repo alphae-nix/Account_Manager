@@ -2,66 +2,42 @@
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
-application de gestionnaire de finance personnelle 
+Application de gestionnaire de finance personnelle 
 
 ## Pour commencer
 
-Entrez ici les instructions pour bien débuter avec votre projet...
-
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
-
-- Programme 1
-- Programme 2
-- etc...
-
-### Installation
-
-Les étapes pour installer votre programme....
-
-Dites ce qu'il faut faire...
-
-_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
-
-
-Ensuite vous pouvez montrer ce que vous obtenez au final...
+- `python3-tk` ou `python-tk`
+- Version de python: 3.8
+- 
 
 ## Démarrage
 
-Dites comment faire pour lancer votre projet
+Pour lancé l’application, tout d’abord rendez vous dans votre terminal et vérifier que vous pouvez l’exécuter: `ls -lah` si impossible de l’exécuter alors taper:`chmod +x <nom_du_fichier>`.
+
+Cette étape terminé et que vous avez tout les pré-requis nécessaire vous pouvez exécuter vos fichiers(`./<nom_du_fichier>`)
 
 ## Fabriqué avec
 
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
-
-_exemples :_
-
-* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
+* [Tkinter](https://docs.python.org/fr/3/library/tkinter.html) - Bibliothèque graphique libre
 * [Atom](https://atom.io/) - Editeur de textes
 
 ## Contributing
 
-Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment le faire.
+contactez moi par mail $\href{mailto:laurent.delatte@edu.esiee.fr}{laurent.delatte@edu.esiee.fr}$
 
 ## Versions
 
-Listez les versions ici 
-_exemple :_
-**Dernière version stable :** 5.0
-**Dernière version :** 5.1
-Liste des versions : [Cliquer pour afficher](https://github.com/your/project-name/tags)
-_(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
+**Dernière version stable :** 1.0
+**Dernière version :** 1.0
 
 ## Auteurs
 
 * **Laurent Delatte** _alias_ [@alphae-nix](https://github.com/alphae-nix)
-* **Inès Fellous** alias [@]()
+* **Inès Fellous** alias [@ines-f](https://github.com/ines-f)
+* **Mona Senelier** alias [monasnl](https://github.com/monasnl)
 
-Lisez la liste des [contributeurs](https://github.com/your/project/contributors) pour voir qui à aidé au projet !
+## Rapport 
 
-_(pour le lien mettez simplement l'URL de votre projet suivi de ``/contirubors``)_
-
-## Rapport (pour plus d’informations)
-
-[rapport](./rapport.pdf)
+Voici notre rapport pour de plus ample informations : [rapport](./rapport.pdf)
