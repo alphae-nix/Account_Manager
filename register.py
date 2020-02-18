@@ -166,7 +166,7 @@ def register():
   Label(screen1, text = "").pack()
   Button(screen1, text = "S'enregistrer", width = 10, height = 1, command = register_user).pack() # Va appeler la fonction "register_user"
 
-  screen1.bind_all("<KeyPress-Return>", lambda test:register_user()) # Raccourcis clavier pour le bouton
+  screen1.bind_all("<KeyPress-Return>", lambda test2:register_user()) # Raccourcis clavier pour le bouton
 
 
 ############################# Page de Connexion ######################################
@@ -207,7 +207,7 @@ def login():
   Label(screen2, text = "").pack()
   Button(screen2, text = "Connexion", width = 10, height = 1, command = login_verify).pack() # Va appeler la fonction login_verify pour vérifier que le mot de passe et le nom d'utilisateur soient bons
 
-  screen2.bind_all("<KeyPress-Return>", lambda test:login_verify()) # Création d'un raccourci avec la touche "Enter" du clavier
+  screen2.bind_all("<KeyPress-Return>", lambda test1:login_verify()) # Création d'un raccourci avec la touche "Enter" du clavier
 
 ############################# PAGE D'ACCUEIL ########################################################
 def main_screen():
