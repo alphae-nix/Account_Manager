@@ -25,7 +25,7 @@ Cette étape terminé et que vous avez tout les pré-requis nécessaire vous pou
 
 ## Contributing
 
-contactez moi par mail $\href{mailto:laurent.delatte@edu.esiee.fr}{laurent.delatte@edu.esiee.fr}$
+contactez moi par mail laurent.delatte@edu.esiee.fr
 
 ## Versions
 
